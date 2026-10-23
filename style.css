@@ -2,7 +2,7 @@ body {
     padding: 0;
     margin: 0;
     background-size: cover;
-    background-image: url("NISSAN_SKYLINE.jpg");
+    background-image: url(NISSAN_SKYLINE.jpg);
     background-attachment: fixed;
 }
 
@@ -19,6 +19,7 @@ body {
     align-items: center;
     padding: 0 50px;
     box-sizing: border-box;
+    /*display: none;*/
 }
 
 /*-----SKYLINE-----*/
@@ -90,6 +91,74 @@ p {
     margin: 70px 30px 50px 30px;
 }
 
+.description {
+    color: white;
+    opacity: 1.00;
+    margin: 30px;
+    margin-left: 30px;
+    text-align: justify;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+#explore-btn {
+    margin: 150px auto 0 auto;
+    text-align: center;
+}
+
+#explore-btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid white;
+    width: 150px;
+    color: white;
+    text-decoration: none;
+}
+
+#explore-btn a:hover {
+    background-color: #0b005b;
+    color: white;
+}
+
+
+/*-----VERTICAL CONTENT-----*/
+.LayoutV {
+    padding: 0;
+    margin: 0 auto;
+    width: 90%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*-----FEATURES TITLE-----*/
+.topContent {
+    min-height: 70px;
+    background-color: rgba(10, 0, 82, 0.8);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#titleHistory {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+/*-----HISTORY-----*/
+#History {
+    padding-top: 80px;
+    margin-top: -80px;
+}
+
+.bottomContent {
+    padding: 30px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.92);
+    width: 100%;
     box-sizing: border-box;
     border-bottom: 1px solid gray;
 }
@@ -115,7 +184,7 @@ p {
 }
 
 .nissanLeft {
-    background-image: url("NISSAN_GTR.png");
+    background-image: url(NISSAN_GTR.png);
     background-size: cover;
     background-position: center;
 }
@@ -183,6 +252,105 @@ p {
     padding: 50px;
 }
 
+
+/*-----INDIVIDUAL CARD-----*/
+.featureCard {
+    display: flex;
+    width: 45%;
+    min-height: 220px;
+    background-color: #f5f5f5;
+    border: 2px solid #0b005b;
+    box-sizing: border-box;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.featureCard:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(5, 0, 46, 0.2);
+}
+
+
+/*-----FEATURE IMAGE-----*/
+.featureImage {
+    width: 45%;
+    min-height: 180px;
+}
+
+.featureImage img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+
+/*-----FEATURE INFORMATION-----*/
+.featureInfo {
+    width: 55%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.featureTitle {
+    color: #0b005b;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.featureDescription {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* -------------SPECS---------------- */
+.specs {
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 70px 50px;
+    box-sizing: border-box;
+    background-color: rgba(248, 248, 248, 0.92);
+}
+
+/* TITLE */
+
+.specsTitle {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.specsTitle h1 {
+    font-size: 40px;
+    color: #05002e;
+    margin-bottom: 8px;
+}
+
+.specsTitle p {
+    font-size: 17px;
+    color: #555;
+}
+
+
+/* MAIN CONTENT */
+
+.specsContent {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 50px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* CAR IMAGE */
+
+.specsImage {
     width: 520px;
     height: 400px;
     overflow: hidden;
@@ -265,6 +433,52 @@ p {
     margin: 0;
 }
 
+
+/* -------------GALLERY---------------- */
+.gallery {
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 70px 50px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.92);
+}
+
+/* GALLERY TITLE */
+.galleryTitle {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.galleryTitle h1 {
+    font-size: 40px;
+    color: #05002e;
+    margin-bottom: 8px;
+}
+
+.galleryTitle p {
+    font-size: 17px;
+    color: #555;
+}
+
+
+/* GALLERY CONTAINER */
+.galleryContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* GALLERY CARD */
+.galleryCard {
+    background-color: white;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+    overflow: hidden;
+}
 
 .galleryCard:hover {
     transform: translateY(-5px);
@@ -371,7 +585,4 @@ p {
     font-size: 13px;
 }
 
-    .contactBottom p {
-        line-height: 1.5;
-    }
-}
+
